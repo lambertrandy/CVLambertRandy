@@ -1,65 +1,81 @@
 
 :root {
-  --bg: #fdfdfd;
-  --text: #111;
-  --accent: #444;
+  --bg: #ffffff;
+  --text: #222222;
+  --accent: #004080;
+  --muted: #666666;
 }
 
 body.dark {
-  --bg: #111;
-  --text: #fdfdfd;
-  --accent: #bbb;
+  --bg: #121212;
+  --text: #e0e0e0;
+  --accent: #80bfff;
+  --muted: #aaaaaa;
 }
 
 body {
-  background: var(--bg);
+  background-color: var(--bg);
   color: var(--text);
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 2rem;
-  transition: background 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .container {
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
+  padding: 1rem;
 }
 
 h1 {
-  font-size: 2rem;
-  margin-bottom: 0;
-}
-
-.contact {
-  font-size: 0.9rem;
+  font-size: 2.2rem;
   color: var(--accent);
-  margin-bottom: 2rem;
+  margin-bottom: 0.2rem;
 }
 
 h2 {
+  font-size: 1.4rem;
+  color: var(--accent);
   border-bottom: 1px solid var(--accent);
   padding-bottom: 0.2rem;
   margin-top: 2rem;
 }
 
 h3 {
+  font-size: 1.2rem;
+  color: var(--text);
   margin-top: 1.5rem;
-  font-weight: bold;
+  margin-bottom: 0.3rem;
 }
 
 h4 {
-  margin: 0.2rem 0;
-  font-weight: normal;
+  font-size: 1rem;
   font-style: italic;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin: 0.4rem 0;
 }
 
 ul {
-  padding-left: 1.2rem;
+  margin: 0.5rem 0 1rem 1.5rem;
 }
 
 li {
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .theme-toggle {
