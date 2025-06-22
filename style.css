@@ -1,56 +1,68 @@
+
+:root {
+  --bg: #fdfdfd;
+  --text: #111;
+  --accent: #444;
+}
+
+body.dark {
+  --bg: #111;
+  --text: #fdfdfd;
+  --accent: #bbb;
+}
+
 body {
-    font-family: sans-serif, Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 12px;
-    max-width: 960px;
-    margin: auto;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 2rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
 }
 
 h1 {
-    font-size: 1.6em;
-    letter-spacing: .3em;
-    padding-top: .5em;
-    padding-bottom: .5em;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.contact {
+  font-size: 0.9rem;
+  color: var(--accent);
+  margin-bottom: 2rem;
 }
 
 h2 {
-    font-size: 1.5em;
-    padding-bottom: 1em;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 0.2rem;
+  margin-top: 2rem;
 }
 
-main { 
-    display: grid;
-    grid-template-columns: 40% 60%;
-    margin-top: 3em;
+h3 {
+  margin-top: 1.5rem;
+  font-weight: bold;
 }
 
-header {
-    text-align: center;
-    margin: auto 2em;
+h4 {
+  margin: 0.2rem 0;
+  font-weight: normal;
+  font-style: italic;
 }
 
-section {
-    margin: auto 1em 4em 2em;
+ul {
+  padding-left: 1.2rem;
 }
 
-i {
-    margin-right: .5em;
+li {
+  margin-bottom: 0.6rem;
 }
 
-p {
-    margin: .2em auto
+.theme-toggle {
+  text-align: right;
+  margin-bottom: 1rem;
 }
-
-hr {
-    border: none;
-    background-color: lightgray;
-    height: 1px;
-}
-
-h1, h2 {
-    font-weight: 100;
-    margin-bottom: 0;
-}
-
-#mainLeft {
-    border-right: 1px solid lightgray;
- }
