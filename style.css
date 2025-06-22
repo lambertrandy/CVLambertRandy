@@ -1,68 +1,80 @@
-
 :root {
   --bg: #ffffff;
-  --text: #222222;
-  --accent: #004080;
-  --muted: #666666;
+  --text: #000000;
+  --accent: #0a3d62;
+  --light-grey: #f2f2f2;
+  --muted: #555;
 }
 
 body.dark {
   --bg: #121212;
-  --text: #e0e0e0;
-  --accent: #80bfff;
-  --muted: #aaaaaa;
+  --text: #f1f1f1;
+  --accent: #82ccdd;
+  --light-grey: #1e1e1e;
+  --muted: #aaa;
 }
 
 body {
-  background-color: var(--bg);
+  background: var(--bg);
   color: var(--text);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
+  font-family: 'Calibri', 'Segoe UI', Tahoma, sans-serif;
   margin: 0;
   padding: 2rem;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background 0.3s, color 0.3s;
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1000px;
+  background: var(--light-grey);
   margin: auto;
-  padding: 1rem;
+  padding: 2rem 3rem;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  border-radius: 10px;
 }
 
 h1 {
   font-size: 2.2rem;
-  color: var(--accent);
   margin-bottom: 0.2rem;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.contact {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-bottom: 2rem;
 }
 
 h2 {
   font-size: 1.4rem;
   color: var(--accent);
-  border-bottom: 1px solid var(--accent);
-  padding-bottom: 0.2rem;
-  margin-top: 2rem;
+  border-bottom: 2px solid var(--accent);
+  margin-top: 2.5rem;
+  padding-bottom: 0.3rem;
 }
 
 h3 {
-  font-size: 1.2rem;
-  color: var(--text);
+  font-size: 1.15rem;
+  font-weight: bold;
   margin-top: 1.5rem;
-  margin-bottom: 0.3rem;
+  color: var(--text);
 }
 
 h4 {
   font-size: 1rem;
   font-style: italic;
+  margin: 0.2rem 0;
   color: var(--muted);
-  margin-bottom: 0.5rem;
 }
 
 p {
-  margin: 0.4rem 0;
+  margin: 0.3rem 0;
+  line-height: 1.5;
 }
 
 ul {
-  margin: 0.5rem 0 1rem 1.5rem;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 li {
@@ -81,4 +93,22 @@ a:hover {
 .theme-toggle {
   text-align: right;
   margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+  .container {
+    padding: 1.5rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
 }
