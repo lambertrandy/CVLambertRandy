@@ -1,80 +1,80 @@
+
 :root {
-  --bg: #ffffff;
-  --text: #000000;
-  --accent: #0a3d62;
-  --light-grey: #f2f2f2;
-  --muted: #555;
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --accent-color: #003366;
+  --muted-color: #555555;
+  --section-bg: #f4f4f4;
 }
 
 body.dark {
-  --bg: #121212;
-  --text: #f1f1f1;
-  --accent: #82ccdd;
-  --light-grey: #1e1e1e;
-  --muted: #aaa;
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --accent-color: #82ccdd;
+  --muted-color: #aaaaaa;
+  --section-bg: #1e1e1e;
 }
 
 body {
-  background: var(--bg);
-  color: var(--text);
+  background-color: var(--bg-color);
+  color: var(--text-color);
   font-family: 'Calibri', 'Segoe UI', Tahoma, sans-serif;
   margin: 0;
   padding: 2rem;
-  transition: background 0.3s, color 0.3s;
+  line-height: 1.6;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .container {
-  max-width: 1000px;
-  background: var(--light-grey);
+  max-width: 900px;
   margin: auto;
-  padding: 2rem 3rem;
-  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  padding: 2rem;
+  background: var(--section-bg);
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 h1 {
   font-size: 2.2rem;
-  margin-bottom: 0.2rem;
-  font-weight: bold;
-  color: var(--accent);
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
 }
 
 .contact {
   font-size: 0.95rem;
-  color: var(--muted);
+  color: var(--muted-color);
   margin-bottom: 2rem;
 }
 
 h2 {
   font-size: 1.4rem;
-  color: var(--accent);
-  border-bottom: 2px solid var(--accent);
-  margin-top: 2.5rem;
-  padding-bottom: 0.3rem;
+  color: var(--accent-color);
+  margin-top: 2rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid var(--accent-color);
 }
 
 h3 {
   font-size: 1.15rem;
-  font-weight: bold;
   margin-top: 1.5rem;
-  color: var(--text);
+  font-weight: bold;
+  color: var(--text-color);
 }
 
 h4 {
   font-size: 1rem;
   font-style: italic;
-  margin: 0.2rem 0;
-  color: var(--muted);
+  color: var(--muted-color);
+  margin: 0.3rem 0;
 }
 
 p {
-  margin: 0.3rem 0;
-  line-height: 1.5;
+  margin: 0.4rem 0;
 }
 
 ul {
-  padding-left: 1.5rem;
-  margin-bottom: 1rem;
+  margin: 0.5rem 0 1.5rem 1.5rem;
+  padding-left: 0;
 }
 
 li {
@@ -82,7 +82,7 @@ li {
 }
 
 a {
-  color: var(--accent);
+  color: var(--accent-color);
   text-decoration: none;
 }
 
@@ -95,12 +95,17 @@ a:hover {
   margin-bottom: 1rem;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.section {
+  margin-top: 2rem;
+}
+
 @media screen and (max-width: 768px) {
-  body {
-    padding: 1rem;
-  }
   .container {
-    padding: 1.5rem;
+    padding: 1.2rem;
   }
   h1 {
     font-size: 1.8rem;
