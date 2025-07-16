@@ -1,3 +1,6 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d7d7b33f-0367-4c73-9adc-48e6161e322b/deploy-status)](https://app.netlify.com/projects/cvrandylambert/deploys)
+
+
 # Randy Lambert MBA PMP ITIL
 
 lambertrandy2@gmail.com |Mississauga, ON | 647-499-1410 | Linkedin.com/in/lambertrandy/
