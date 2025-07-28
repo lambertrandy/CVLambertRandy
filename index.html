@@ -18,6 +18,9 @@
 </head>
 <body>
   <div class="container">
+    <div class="theme-toggle">
+  <button id="toggle-theme">🌙 Dark Mode</button>
+</div>
     <h1>Randy Lambert <span style="font-weight:400;">— MBA, PMP, ITIL</span></h1>
     <div class="contact">
       <span>Mississauga, ON</span>
@@ -143,5 +146,26 @@
       <em>Created with vibe coding and GitHub repo</em>
     </p>
   </div>
+  <script>
+  const themeBtn = document.getElementById('toggle-theme');
+  const body = document.body;
+
+  // Check local storage for saved theme
+  if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark');
+    themeBtn.textContent = '☀️ Light Mode';
+  }
+
+  themeBtn.addEventListener('click', () => {
+    body.classList.toggle('dark');
+    if (body.classList.contains('dark')) {
+      localStorage.setItem('theme', 'dark');
+      themeBtn.textContent = '☀️ Light Mode';
+    } else {
+      localStorage.setItem('theme', 'light');
+      themeBtn.textContent = '🌙 Dark Mode';
+    }
+  });
+</script>
 </body>
 </html>
