@@ -4,12 +4,12 @@
   /* Color Palette */
   --bg-color: #fafbfc;
   --text-color: #2c3e50;
-  --accent-color: #3498db;
-  --secondary-accent: #2980b9;
+  --accent-color: #2c5282;
+  --secondary-accent: #1a365d;
   --muted-color: #7f8c8d;
   --section-bg: #ffffff;
-  --card-shadow: 0 4px 20px rgba(52, 152, 219, 0.08);
-  --card-shadow-hover: 0 8px 30px rgba(52, 152, 219, 0.12);
+  --card-shadow: 0 4px 20px rgba(44, 82, 130, 0.08);
+  --card-shadow-hover: 0 8px 30px rgba(44, 82, 130, 0.12);
   --border-radius: 16px;
   --border-radius-small: 8px;
   --link-bg: #ebf3fd;
