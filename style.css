@@ -77,7 +77,7 @@ body {
 
 /* Header Styles */
 .header {
-  background: linear-gradient(135deg, #4a5568, #2d3748);
+  background: linear-gradient(135deg, #2d3748, #1a202c);
   color: white;
   padding: var(--spacing-xl) var(--spacing-lg) var(--spacing-lg);
   margin: 0 0 var(--spacing-lg) 0;
