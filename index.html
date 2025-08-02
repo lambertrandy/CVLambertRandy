@@ -11,161 +11,329 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Randy Lambert - Resume</title>
+  <meta name="description" content="Randy Lambert - Strategic PMO Director with 7+ years experience in project management, MBA, PMP, ITIL certified">
+  <title>Randy Lambert - Strategic PMO Director | Resume</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <div class="container">
-    <div class="theme-toggle">
-  <button id="toggle-theme">🌙 Dark Mode</button>
-</div>
-    <h1>Randy Lambert <span style="font-weight:400;">— MBA, PMP, ITIL</span></h1>
-    <div class="contact">
-      <span>Mississauga, ON</span>
-      <a href="mailto:lambertrandy2@gmail.com" target="_blank">lambertrandy2@gmail.com</a>
-      <a href="https://www.linkedin.com/in/lambertrandy/" target="_blank">LinkedIn</a>
-      <span>647-542-4795</span>
-    </div>
+    <header class="header">
+      <div class="theme-toggle">
+        <button id="toggle-theme" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+          <span>Dark Mode</span>
+        </button>
+      </div>
+      
+      <div class="hero-section">
+        <h1 class="name">Randy Lambert</h1>
+        <p class="credentials">MBA, PMP, ITIL Certified</p>
+        <p class="title">Strategic PMO Director</p>
+      </div>
+      
+      <div class="contact">
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Mississauga, ON</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:lambertrandy2@gmail.com" target="_blank">lambertrandy2@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/lambertrandy/" target="_blank">LinkedIn Profile</a>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <a href="tel:647-542-4795">647-542-4795</a>
+        </div>
+      </div>
+    </header>
 
-    <section class="section">
-      <h2>Professional Summary</h2>
-      <p>Strategic <strong>PMO Director</strong> with <strong>7+ years of experience</strong> in <strong>end-to-end project management</strong>, including <strong>establishing and scaling PMOs</strong>, driving <strong>successful delivery of complex projects</strong>, and aligning programs with strategic business goals. Proven expertise <strong>leading cross-functional initiatives</strong> across product, development, design, marketing, and operations while standardizing project management processes, frameworks, and tooling. <strong>Adept in SDLC, Agile/Scrum/Waterfall methodologies</strong>, and Smartsheet, with a strong focus on risk and issue management, launch readiness, and post-project evaluations that <strong>drive continuous improvement</strong>. Known for providing <strong>strategic operational oversight</strong>, acting as the <strong>primary point of contact for executive stakeholders</strong>, and executing against KPIs, budgets, and timelines. <strong>Strong ability to drive OKRs</strong>, elevate delivery maturity, and build high-performing teams across global delivery footprints. PMP-certified, with experience in fintech.</p>
-    </section>
+    <main>
+      <section class="section summary-section">
+        <h2><i class="fas fa-user-tie"></i>Professional Summary</h2>
+        <p class="summary-text">Strategic <strong>PMO Director</strong> with <strong>7+ years of experience</strong> in <strong>end-to-end project management</strong>, including <strong>establishing and scaling PMOs</strong>, driving <strong>successful delivery of complex projects</strong>, and aligning programs with strategic business goals. Proven expertise <strong>leading cross-functional initiatives</strong> across product, development, design, marketing, and operations while standardizing project management processes, frameworks, and tooling.</p>
+        
+        <p class="summary-text"><strong>Adept in SDLC, Agile/Scrum/Waterfall methodologies</strong>, and Smartsheet, with a strong focus on risk and issue management, launch readiness, and post-project evaluations that <strong>drive continuous improvement</strong>. Known for providing <strong>strategic operational oversight</strong>, acting as the <strong>primary point of contact for executive stakeholders</strong>, and executing against KPIs, budgets, and timelines.</p>
+      </section>
 
-    <section class="section">
-      <h2>Technical Skills</h2>
-      <ul>
-        <li><strong>Project Management Tools:</strong> Jira, Confluence, Microsoft Project, Smartsheet</li>
-        <li><strong>Cloud Platforms:</strong> Microsoft Azure, AWS</li>
-        <li><strong>DevOps and CI/CD:</strong> DevOps Toolsets, Jira Service Management, CMDBs HP, ServiceNow, Manage Engine, Fresh Service</li>
-        <li><strong>Visualization and Diagramming:</strong> Lucid Charts, Visio, Miro</li>
-        <li><strong>Project Management:</strong> Agile (Scrum, Kanban), Iterative Development, SDLC, ITIL, DevOps</li>
-        <li><strong>Technical Leadership:</strong> Cloud Technologies (AWS, Azure), Architecture Patterns, CI/CD</li>
-        <li><strong>Stakeholder/Risk Management:</strong> Communication, Collaboration, Contingency Planning</li>
-        <li><strong>Project Execution:</strong> Sprint Planning, Backlog Refinement, WBS Task Breakdown, Milestone Tracking</li>
-      </ul>
-    </section>
+      <div class="two-column-layout">
+        <div class="left-column">
+          <section class="section">
+            <h2><i class="fas fa-cogs"></i>Technical Skills</h2>
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h3>Project Management Tools</h3>
+                <ul class="skill-list">
+                  <li>Jira & Confluence</li>
+                  <li>Microsoft Project</li>
+                  <li>Smartsheet</li>
+                </ul>
+              </div>
+              <div class="skill-category">
+                <h3>Cloud Platforms</h3>
+                <ul class="skill-list">
+                  <li>Microsoft Azure</li>
+                  <li>Amazon AWS</li>
+                </ul>
+              </div>
+              <div class="skill-category">
+                <h3>DevOps & CI/CD</h3>
+                <ul class="skill-list">
+                  <li>DevOps Toolsets</li>
+                  <li>Jira Service Management</li>
+                  <li>ServiceNow, Fresh Service</li>
+                </ul>
+              </div>
+              <div class="skill-category">
+                <h3>Visualization Tools</h3>
+                <ul class="skill-list">
+                  <li>Lucid Charts</li>
+                  <li>Microsoft Visio</li>
+                  <li>Miro</li>
+                </ul>
+              </div>
+            </div>
+          </section>
 
-    <section class="section">
-      <h2>Professional Skills</h2>
-      <ul>
-        <li><strong>Strategic IT Leadership:</strong> Visionary approach to align IT strategies and digital transformation with corporate objectives, enhancing operational efficiency and market responsiveness.</li>
-        <li><strong>Project Program Management:</strong> Ability to lead project portfolios, and IT application development by managing extensive budgets, project delivery of multiple year, multiple phases, cross functional teams, influencing without authority. Led projects of up to $10M.</li>
-        <li><strong>Agile DevOps:</strong> Pioneered Agile adoption and DevOps practices, significantly improving delivery speed, quality, and team collaboration, and conflict resolution.</li>
-        <li><strong>Engagement with Stakeholders:</strong> Skilled in managing relationships with C-level executives, vendors, and cross-functional teams to ensure project success with emotional intelligence.</li>
-        <li><strong>Security, Compliance, and Risk Management:</strong> Implemented robust security frameworks, managed regulatory compliance, and mitigated risks across global operations in the FinTech and iGaming industry.</li>
-      </ul>
-    </section>
+          <section class="section">
+            <h2><i class="fas fa-graduation-cap"></i>Education</h2>
+            <div class="education-item">
+              <h3>Master of Business Administration (MBA)</h3>
+              <p class="institution">Midwestern State University</p>
+            </div>
+            <div class="education-item">
+              <h3>Bachelor of Business Administration</h3>
+              <p class="institution">Finance • Midwestern State University</p>
+            </div>
+          </section>
 
-    <section class="section">
-      <h2>Key Accomplishments</h2>
-      <ul>
-        <li>Led 80+ complex IT and SaaS projects, driving a 30% improvement in enterprise-scale delivery efficiency in cross-functional teams.</li>
-        <li>Established and scaled IT PMO frameworks, streamlining risk and issue management.</li>
-        <li>Managed $10M+ project portfolios with System Integrators and global teams, ensuring on-time, on-budget delivery with zero downtime in SDLC projects.</li>
-        <li>Directed 5 global data centre and cloud migrations, achieving 100% uptime and full compliance with ITIL.</li>
-        <li>Provided strategic operational oversight as Associate Director of IT PMO, enabling alignment across product, development, marketing, and operations teams in Agile environments.</li>
-      </ul>
-    </section>
+          <section class="section">
+            <h2><i class="fas fa-certificate"></i>Certifications</h2>
+            <div class="certifications-grid">
+              <div class="cert-item">
+                <i class="fas fa-award"></i>
+                <span>PMP PMI Certification</span>
+              </div>
+              <div class="cert-item">
+                <i class="fas fa-award"></i>
+                <span>PMI-ACP</span>
+              </div>
+              <div class="cert-item">
+                <i class="fas fa-award"></i>
+                <span>Scrum Alliance Agile Leadership</span>
+              </div>
+              <div class="cert-item">
+                <i class="fab fa-aws"></i>
+                <span>AWS Certified Cloud Practitioner</span>
+              </div>
+              <div class="cert-item">
+                <i class="fab fa-microsoft"></i>
+                <span>Microsoft Azure AZ900</span>
+              </div>
+              <div class="cert-item">
+                <i class="fas fa-code-branch"></i>
+                <span>DevOps Foundations</span>
+              </div>
+              <div class="cert-item">
+                <i class="fas fa-tools"></i>
+                <span>ITIL Practitioner</span>
+              </div>
+              <div class="cert-item">
+                <i class="fas fa-tools"></i>
+                <span>ITIL Foundations v3</span>
+              </div>
+            </div>
+          </section>
+        </div>
 
-    <section class="section">
-      <h2>Career Progression</h2>
-      <h3>Brokerlink Insurance, Toronto</h3>
-      <p><strong>Senior Program Manager</strong> — Apr 2025 – Present (Short Contract)</p>
-      <ul>
-        <li><strong>Implemented enterprise software solutions using Agile methodologies</strong>, modernising key business functions. Applied Service Oriented Architecture (SOA), and SDLC software development lifecycle methods enhancing efficiency.</li>
-        <li><strong>Spearheaded Product teams and integrated technical teams for delivery of SaaS and software development projects.</strong></li>
-        <li>Integrated IT application with the enterprise data warehouse, streamlining data analytics, web-based reporting insights.</li>
-      </ul>
+        <div class="right-column">
+          <section class="section">
+            <h2><i class="fas fa-lightbulb"></i>Professional Skills</h2>
+            <div class="professional-skills">
+              <div class="skill-item">
+                <h3><i class="fas fa-chess-king"></i>Strategic IT Leadership</h3>
+                <p>Visionary approach to align IT strategies and digital transformation with corporate objectives, enhancing operational efficiency and market responsiveness.</p>
+              </div>
+              <div class="skill-item">
+                <h3><i class="fas fa-project-diagram"></i>Project Program Management</h3>
+                <p>Ability to lead project portfolios and IT application development by managing extensive budgets, project delivery of multiple year, multiple phases, cross functional teams. Led projects of up to $10M.</p>
+              </div>
+              <div class="skill-item">
+                <h3><i class="fas fa-sync-alt"></i>Agile DevOps</h3>
+                <p>Pioneered Agile adoption and DevOps practices, significantly improving delivery speed, quality, and team collaboration.</p>
+              </div>
+              <div class="skill-item">
+                <h3><i class="fas fa-handshake"></i>Stakeholder Engagement</h3>
+                <p>Skilled in managing relationships with C-level executives, vendors, and cross-functional teams to ensure project success with emotional intelligence.</p>
+              </div>
+              <div class="skill-item">
+                <h3><i class="fas fa-shield-alt"></i>Security & Risk Management</h3>
+                <p>Implemented robust security frameworks, managed regulatory compliance, and mitigated risks across global operations in FinTech and iGaming industry.</p>
+              </div>
+            </div>
+          </section>
 
-      <h3>Flutter Entertainment PLC, Toronto</h3>
-      <p><strong>Associate Director – IT PMO</strong> — Nov 2021 – Jan 2025</p>
-      <ul>
-        <li><strong>Liaised with executives to intake IT requests, technical project scope and created the IT front door for detailed project plans</strong> for 80+ IT projects, ensuring seamless execution and governance.</li>
-        <li><strong>Facilitated sprint planning, backlog grooming, and iterative development across Agile teams</strong>, optimizing project delivery and stakeholder engagement. Helped set up Agile ceremonies and daily scrum.</li>
-        <li>Managed cloud infrastructure migrations across 5 global data centres with no downtime.</li>
-        <li><strong>Led cross-functional teams of developers, testers, and architects</strong>, fostering a collaborative and high-performance culture. Led projects and teams of up to $10M.</li>
-        <li><strong>Implemented best practices for cloud infrastructure migrations</strong>, overseeing five global data centre transitions with zero unplanned downtime. Defined project scope and delivered updates on progress.</li>
-        <li><strong>Applied Agile and DevOps methodologies</strong>, enhancing deployment efficiency and reducing project cycle times by 30%.</li>
-        <li><strong>Communicated project status, risks, and updates</strong> to senior leadership, ensuring alignment with business objectives.</li>
-        <li>Progressive career with promotions in escalation of duties and team management, helped in the Agile transformation of cloud infrastructure, migration of data centres.</li>
-      </ul>
+          <section class="section">
+            <h2><i class="fas fa-trophy"></i>Key Accomplishments</h2>
+            <div class="accomplishments">
+              <div class="accomplishment-item">
+                <div class="metric">80+</div>
+                <div class="description">Complex IT and SaaS projects led, driving 30% improvement in enterprise-scale delivery efficiency</div>
+              </div>
+              <div class="accomplishment-item">
+                <div class="metric">$10M+</div>
+                <div class="description">Project portfolios managed with global teams, ensuring on-time, on-budget delivery with zero downtime</div>
+              </div>
+              <div class="accomplishment-item">
+                <div class="metric">5</div>
+                <div class="description">Global data centre and cloud migrations directed, achieving 100% uptime and full ITIL compliance</div>
+              </div>
+              <div class="accomplishment-item">
+                <div class="metric">100%</div>
+                <div class="description">IT infrastructure audit pass rate achieved through optimized processes and single pane of glass visibility</div>
+              </div>
+              <div class="accomplishment-item">
+                <div class="metric">40%</div>
+                <div class="description">Reduction in cyber threats through proactive Security Vulnerability Management framework</div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
 
-      <p><strong>IT PMO Team Lead</strong> — Jan 2021 – Nov 2021</p>
-      <ul>
-        <li><strong>Established and optimised IT infrastructure audit process creating single pane of glass</strong>, achieving a 100% audit pass rate.</li>
-        <li><strong>Developed a Security Vulnerability Management framework</strong>, reducing cyber threats by 40% through proactive risk mitigation.</li>
-        <li><strong>Led the IT PMO</strong>, coaching and mentoring Agile Scrum Masters and IT Project Managers across North America and Europe.</li>
-      </ul>
+      <section class="section experience-section">
+        <h2><i class="fas fa-briefcase"></i>Professional Experience</h2>
+        
+        <div class="experience-item">
+          <div class="company-header">
+            <h3>Brokerlink Insurance</h3>
+            <span class="location">Toronto, ON</span>
+          </div>
+          <div class="role-header">
+            <h4>Senior Program Manager</h4>
+            <span class="duration">Apr 2025 – Present</span>
+            <span class="contract-type">Short Contract</span>
+          </div>
+          <ul class="achievements">
+            <li><strong>Implemented enterprise software solutions using Agile methodologies</strong>, modernising key business functions using Service Oriented Architecture (SOA) and SDLC methodologies</li>
+            <li><strong>Spearheaded Product teams and integrated technical teams</strong> for delivery of SaaS and software development projects</li>
+            <li>Integrated IT applications with enterprise data warehouse, streamlining data analytics and web-based reporting insights</li>
+          </ul>
+        </div>
 
-      <p><strong>Senior IT Project Manager</strong> — Aug 2020 – Jan 2021</p>
-      <ul>
-        <li><strong>Managed the delivery of global data centre operations</strong>, ensuring high availability and compliance with industry standards and best practices – followed COBIT and ISO27001 frameworks – planned and scheduled timelines.</li>
-        <li><strong>Enhanced IT service desk workflows</strong>, integrating Slack with Jira and improving resolution times by 25%.</li>
-        <li><strong>Drove CI/CD best practices</strong>, reducing software release cycles by 30% through automation.</li>
-      </ul>
+        <div class="experience-item">
+          <div class="company-header">
+            <h3>Flutter Entertainment PLC</h3>
+            <span class="location">Toronto, ON</span>
+          </div>
+          
+          <div class="role-header">
+            <h4>Associate Director – IT PMO</h4>
+            <span class="duration">Nov 2021 – Jan 2025</span>
+          </div>
+          <ul class="achievements">
+            <li><strong>Liaised with executives to intake IT requests</strong>, created technical project scope and established the IT front door for 80+ IT projects</li>
+            <li><strong>Facilitated sprint planning, backlog grooming, and iterative development</strong> across Agile teams, optimizing project delivery and stakeholder engagement</li>
+            <li>Managed cloud infrastructure migrations across 5 global data centres with zero downtime</li>
+            <li><strong>Led cross-functional teams</strong> of developers, testers, and architects, fostering collaborative culture on projects up to $10M</li>
+            <li><strong>Applied Agile and DevOps methodologies</strong>, enhancing deployment efficiency and reducing project cycle times by 30%</li>
+            <li><strong>Communicated project status, risks, and updates</strong> to senior leadership, ensuring alignment with business objectives</li>
+          </ul>
 
-      <h3>Goeasy Ltd., Mississauga</h3>
-      <p><strong>Manager IT Service Delivery</strong> — Jan 2016 – Aug 2020</p>
-      <ul>
-        <li>Led FinTech incident management operations, implementing data-driven Root Cause Analysis (RCA) cut Mean Time to Repair (MTTR) by 50%.</li>
-        <li>Strengthened change management governance, chairing CAB (Change Advisory Board) meetings and ensuring seamless system deployments with zero major incidents post-release.</li>
-      </ul>
+          <div class="role-header">
+            <h4>IT PMO Team Lead</h4>
+            <span class="duration">Jan 2021 – Nov 2021</span>
+          </div>
+          <ul class="achievements">
+            <li><strong>Established and optimised IT infrastructure audit process</strong>, creating single pane of glass and achieving 100% audit pass rate</li>
+            <li><strong>Developed Security Vulnerability Management framework</strong>, reducing cyber threats by 40% through proactive risk mitigation</li>
+            <li><strong>Led the IT PMO</strong>, coaching and mentoring Agile Scrum Masters and IT Project Managers across North America and Europe</li>
+          </ul>
 
-      <p><strong>Manager IT Vendor Management</strong> — Jan 2015 – Jan 2016</p>
-      <ul>
-        <li>Negotiated vendor contracts, securing cost reductions of $500K+ and established a comprehensive RFI/RFQ/SOW framework, improving vendor accountability and performance while ensuring alignment with business and compliance requirements.</li>
-      </ul>
-    </section>
+          <div class="role-header">
+            <h4>Senior IT Project Manager</h4>
+            <span class="duration">Aug 2020 – Jan 2021</span>
+          </div>
+          <ul class="achievements">
+            <li><strong>Managed delivery of global data centre operations</strong>, ensuring high availability and compliance with COBIT and ISO27001 frameworks</li>
+            <li><strong>Enhanced IT service desk workflows</strong>, integrating Slack with Jira and improving resolution times by 25%</li>
+            <li><strong>Drove CI/CD best practices</strong>, reducing software release cycles by 30% through automation</li>
+          </ul>
+        </div>
 
-    <section class="section">
-      <h2>Education</h2>
-      <ul>
-        <li>M.B.A., Master of Business Administration - Midwestern State University</li>
-        <li>B.B.A., Bachelor of Business Administration in Finance - Midwestern State University</li>
-      </ul>
-    </section>
+        <div class="experience-item">
+          <div class="company-header">
+            <h3>Goeasy Ltd.</h3>
+            <span class="location">Mississauga, ON</span>
+          </div>
+          
+          <div class="role-header">
+            <h4>Manager IT Service Delivery</h4>
+            <span class="duration">Jan 2016 – Aug 2020</span>
+          </div>
+          <ul class="achievements">
+            <li>Led FinTech incident management operations, implementing data-driven Root Cause Analysis (RCA) cutting Mean Time to Repair (MTTR) by 50%</li>
+            <li>Strengthened change management governance, chairing CAB meetings and ensuring seamless system deployments with zero major incidents post-release</li>
+          </ul>
 
-    <section class="section">
-      <h2>Certifications</h2>
-      <ul>
-        <li>PMP PMI certification</li>
-        <li>PMI-ACP</li>
-        <li>Scrum Alliance's Agile Leadership</li>
-        <li>AWS Certified Cloud Practitioner</li>
-        <li>Microsoft Azure AZ900</li>
-        <li>DevOps Foundations</li>
-        <li>ITIL Practitioner</li>
-        <li>ITIL Foundations v3</li>
-      </ul>
-    </section>
+          <div class="role-header">
+            <h4>Manager IT Vendor Management</h4>
+            <span class="duration">Jan 2015 – Jan 2016</span>
+          </div>
+          <ul class="achievements">
+            <li>Negotiated vendor contracts, securing cost reductions of $500K+ and established comprehensive RFI/RFQ/SOW framework, improving vendor accountability and performance</li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
-    <p style="margin-top:2.5rem; color:var(--muted-color); font-size:0.97rem; text-align:right;">
-      <em>Created with vibe coding and GitHub repo</em>
-    </p>
+    <footer class="footer">
+      <p><em>Professional resume created with modern web technologies</em></p>
+    </footer>
   </div>
+
   <script>
-  const themeBtn = document.getElementById('toggle-theme');
-  const body = document.body;
+    const themeBtn = document.getElementById('toggle-theme');
+    const body = document.body;
+    const themeIcon = themeBtn.querySelector('i');
+    const themeText = themeBtn.querySelector('span');
 
-  // Check local storage for saved theme
-  if (localStorage.getItem('theme') === 'dark') {
-    body.classList.add('dark');
-    themeBtn.textContent = '☀️ Light Mode';
-  }
-
-  themeBtn.addEventListener('click', () => {
-    body.classList.toggle('dark');
-    if (body.classList.contains('dark')) {
-      localStorage.setItem('theme', 'dark');
-      themeBtn.textContent = '☀️ Light Mode';
-    } else {
-      localStorage.setItem('theme', 'light');
-      themeBtn.textContent = '🌙 Dark Mode';
+    // Check local storage for saved theme
+    if (localStorage.getItem('theme') === 'dark') {
+      body.classList.add('dark');
+      themeIcon.className = 'fas fa-sun';
+      themeText.textContent = 'Light Mode';
     }
-  });
-</script>
+
+    themeBtn.addEventListener('click', () => {
+      body.classList.toggle('dark');
+      if (body.classList.contains('dark')) {
+        localStorage.setItem('theme', 'dark');
+        themeIcon.className = 'fas fa-sun';
+        themeText.textContent = 'Light Mode';
+      } else {
+        localStorage.setItem('theme', 'light');
+        themeIcon.className = 'fas fa-moon';
+        themeText.textContent = 'Dark Mode';
+      }
+    });
+
+    // Add smooth scrolling for better UX
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
 </html>
