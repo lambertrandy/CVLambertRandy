@@ -1,1 +1,20 @@
+ }
 
+  .experience-item,
+  .project-showcase {
+    break-inside: avoid;
+  }
+
+  body {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .profile-name {
+    font-size: 24px;
+  }
+
+  .section-heading {
+    font-size: 18px;
+  }
+}
