@@ -1,1 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lambert Group - Professional Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Professional portfolio showcasing technical expertise and project management excellence" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <span class="brand-text">Lambert Group</span>
+        </div>
+        <div class="nav-links">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
 
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              <span class="title-line">Technical Excellence</span>
+              <span class="title-line">Meets Strategic Vision</span>
+            </h1>
+            <p class="hero-subtitle">
+              Bridging the gap between cutting-edge development and strategic project management
+            </p>
+            <div class="hero-stats">
+              <div class="stat">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Projects Delivered</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">On-Time Delivery</span>
+              </div>
+            </div>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">View My Work</a>
+              <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="code-window">
+              <div class="window-header">
+                <div class="window-controls">
+                  <span class="control close"></span>
+                  <span class="control minimize"></span>
+                  <span class="control maximize"></span>
+                </div>
+                <span class="window-title">project-manager.js</span>
+              </div>
+              <div class="code-content">
+                <pre><code id="typing-code"></code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p class="lead">
+                I'm a seasoned professional who combines deep technical expertise with strategic project management acumen. 
+                My unique approach ensures that every line of code serves a business purpose, and every project milestone 
+                drives measurable value.
+              </p>
+              <div class="about-highlights">
+                <div class="highlight">
+                  <h3>Technical Leadership</h3>
+                  <p>Architecting scalable solutions while maintaining code quality and development best practices.</p>
+                </div>
+                <div class="highlight">
+                  <h3>Strategic Planning</h3>
+                  <p>Translating business requirements into actionable technical roadmaps with clear deliverables.</p>
+                </div>
+                <div class="highlight">
+                  <h3>Team Coordination</h3>
+                  <p>Bridging communication gaps between technical teams and stakeholders for seamless execution.</p>
+                </div>
+              </div>
+            </div>
+            <div class="about-image">
+              <div class="profile-card">
+                <div class="card-header">
+                  <div class="avatar">
+                    <span class="avatar-text">LG</span>
+                  </div>
+                  <div class="card-info">
+                    <h3>Professional Profile</h3>
+                    <p>Technical Project Manager</p>
+                  </div>
+                </div>
+                <div class="card-metrics">
+                  <div class="metric">
+                    <span class="metric-value">95%</span>
+                    <span class="metric-label">Client Satisfaction</span>
+                  </div>
+                  <div class="metric">
+                    <span class="metric-value">15%</span>
+                    <span class="metric-label">Avg. Cost Reduction</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills">
+        <div class="container">
+          <h2 class="section-title">Core Competencies</h2>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3 class="category-title">Technical Skills</h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <span class="skill-name">JavaScript/TypeScript</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="90"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">React/Vue.js</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="85"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Node.js/Python</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="80"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Cloud Architecture</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="75"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3 class="category-title">Project Management</h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <span class="skill-name">Agile/Scrum</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="95"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Stakeholder Management</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="90"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Risk Assessment</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="85"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Budget Management</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="80"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects">
+        <div class="container">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-header">
+                <h3>Enterprise Dashboard Platform</h3>
+                <span class="project-type">Full-Stack Development</span>
+              </div>
+              <p class="project-description">
+                Led development of a comprehensive analytics dashboard serving 10,000+ users. 
+                Managed cross-functional team of 8 developers while architecting scalable microservices.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">AWS</span>
+              </div>
+              <div class="project-metrics">
+                <div class="metric">
+                  <span class="metric-label">Timeline:</span>
+                  <span class="metric-value">6 months</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-label">Team Size:</span>
+                  <span class="metric-value">8 developers</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-label">Performance:</span>
+                  <span class="metric-value">40% faster</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-header">
+                <h3>Mobile-First E-commerce</h3>
+                <span class="project-type">Technical Leadership</span>
+              </div>
+              <p class="project-description">
+                Orchestrated complete platform migration while maintaining 99.9% uptime. 
+                Coordinated with stakeholders to deliver 25% revenue increase through optimized UX.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Vue.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Docker</span>
+              </div>
+              <div class="project-metrics">
+                <div class="metric">
+                  <span class="metric-label">Revenue Impact:</span>
+                  <span class="metric-value">+25%</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-label">Uptime:</span>
+                  <span class="metric-value">99.9%</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-label">Load Time:</span>
+                  <span class="metric-value">-60%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-header">
+                <h3>API Integration Suite</h3>
+                <span class="project-type">System Architecture</span>
+              </div>
+              <p class="project-description">
+                Designed and implemented unified API gateway connecting 15+ third-party services. 
+                Reduced integration complexity by 70% while improving system reliability.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">GraphQL</span>
+                <span class="tech-tag">Redis</span>
+                <span class="tech-tag">Kubernetes</span>
+              </div>
+              <div class="project-metrics">
+                <div class="metric">
+                  <span class="metric-label">Integrations:</span>
+                  <span class="metric-value">15+ APIs</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-label">Complexity:</span>
+                  <span class="metric-value">-70%</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-label">Reliability:</span>
+                  <span class="metric-value">99.8%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="experience">
+        <div class="container">
+          <h2 class="section-title">Professional Journey</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h3>Senior Technical Project Manager</h3>
+                <span class="timeline-period">2020 - Present</span>
+                <p>Leading digital transformation initiatives while maintaining hands-on development involvement. 
+                   Managing $2M+ project portfolios with consistent on-time, on-budget delivery.</p>
+                <ul class="achievement-list">
+                  <li>Reduced project delivery time by 30% through optimized workflows</li>
+                  <li>Implemented CI/CD pipelines improving deployment frequency by 400%</li>
+                  <li>Mentored 15+ junior developers in best practices and career growth</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h3>Full-Stack Developer & Team Lead</h3>
+                <span class="timeline-period">2017 - 2020</span>
+                <p>Transitioned from individual contributor to technical leadership role. 
+                   Built scalable applications while developing project management expertise.</p>
+                <ul class="achievement-list">
+                  <li>Architected microservices handling 1M+ daily transactions</li>
+                  <li>Led team of 5 developers in agile development practices</li>
+                  <li>Established code review processes improving quality by 50%</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h3>Software Developer</h3>
+                <span class="timeline-period">2014 - 2017</span>
+                <p>Foundation years building core technical skills across multiple technologies. 
+                   Developed passion for clean code and efficient project execution.</p>
+                <ul class="achievement-list">
+                  <li>Delivered 20+ client projects with 100% satisfaction rate</li>
+                  <li>Mastered modern JavaScript frameworks and backend technologies</li>
+                  <li>Contributed to open-source projects with 1000+ GitHub stars</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="section-title">Let's Build Something Great</h2>
+          <div class="contact-content">
+            <div class="contact-info">
+              <h3>Ready to discuss your next project?</h3>
+              <p>I'm always interested in challenging opportunities that combine technical innovation with strategic business impact.</p>
+              <div class="contact-methods">
+                <a href="mailto:contact@lambertgroup.net" class="contact-method">
+                  <span class="method-icon">📧</span>
+                  <span class="method-text">contact@lambertgroup.net</span>
+                </a>
+                <a href="https://linkedin.com/in/lambertgroup" class="contact-method">
+                  <span class="method-icon">💼</span>
+                  <span class="method-text">LinkedIn Profile</span>
+                </a>
+                <a href="https://github.com/lambertgroup" class="contact-method">
+                  <span class="method-icon">🔗</span>
+                  <span class="method-text">GitHub Portfolio</span>
+                </a>
+              </div>
+            </div>
+            <div class="contact-form">
+              <form id="contact-form">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="project">Project Type</label>
+                  <select id="project" name="project">
+                    <option value="">Select project type</option>
+                    <option value="web-development">Web Development</option>
+                    <option value="mobile-app">Mobile Application</option>
+                    <option value="consulting">Technical Consulting</option>
+                    <option value="project-management">Project Management</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <span class="brand-text">Lambert Group</span>
+            <p>Technical Excellence • Strategic Vision • Delivered Results</p>
+          </div>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Lambert Group. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
