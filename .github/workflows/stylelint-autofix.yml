@@ -33,10 +33,12 @@ jobs:
 
       # Run autofix across all css files
       - name: Run stylelint --fix
+        continue-on-error: true
         run: |
           .tmp-stylelint/node_modules/.bin/stylelint "**/*.css" \
             --fix \
             --config .tmp-stylelint/.stylelintrc.json
+
 
       # Create a PR with the fixed files (instead of pushing directly to main)
       - name: Create Pull Request
