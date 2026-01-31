@@ -43,7 +43,7 @@ jobs:
       - name: Run stylelint (CSS)
         run: |
           # Lint all css files in the repo
-# Lint all css files in the repo (do not fail build yet)
+          # Lint all css files in the repo (do not fail build yet)
           npx stylelint "**/*.css" || true
 
 
