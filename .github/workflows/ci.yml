@@ -15,7 +15,7 @@ jobs:
 
       # --- HTML validation (single page) ---
       - name: Validate HTML (index.html)
-        uses: Cyb3r-Jak3/html5validator-action@v8
+        uses: Cyb3r-Jak3/html5validator-action@v7
         with:
           root: .
           # If your main file isn't index.html, change this:
