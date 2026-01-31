@@ -1,0 +1,12 @@
+{
+  "name": "cvlambertrandy",
+  "version": "1.0.0",
+  "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/d7d7b33f-0367-4c73-9adc-48e6161e322b/deploy-status)](https://app.netlify.com/projects/cvrandylambert/deploys)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
