@@ -1,0 +1,52 @@
+name: Static Site Checks
+
+on:
+  pull_request:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  html_css_checks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # --- HTML validation (single page) ---
+      - name: Validate HTML (index.html)
+        uses: Cyb3r-Jak3/html5validator-action@v8
+        with:
+          root: .
+          # If your main file isn't index.html, change this:
+          blacklist: node_modules
+
+      # --- CSS linting ---
+      - name: Setup Node (for CSS lint)
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install stylelint
+        run: |
+          npm init -y
+          npm install --save-dev stylelint stylelint-config-standard
+
+      - name: Create stylelint config
+        run: |
+          cat > .stylelintrc.json <<'EOF'
+          {
+            "extends": ["stylelint-config-standard"]
+          }
+          EOF
+
+      - name: Run stylelint (CSS)
+        run: |
+          # Lint all css files in the repo
+          npx stylelint "**/*.css"
+
+
+      - name: Check links (optional)
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: --verbose --no-progress "index.html"
