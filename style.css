@@ -620,3 +620,86 @@ a:focus {
 html {
   scroll-behavior: smooth;
 }
+
+/* Personal project showcase */
+.project-eyebrow {
+  color: var(--secondary-accent);
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.project-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+  gap: var(--spacing-sm);
+  margin: var(--spacing-md) 0;
+}
+
+.project-results > div {
+  padding: var(--spacing-md);
+  background: var(--highlight);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-small);
+}
+
+.project-results strong,
+.project-results span {
+  display: block;
+}
+
+.project-results strong {
+  font-size: 2rem;
+  color: var(--secondary-accent);
+}
+
+.project-explainer {
+  padding: var(--spacing-sm);
+  background: var(--highlight);
+  border-radius: var(--border-radius-small);
+}
+
+.project-explainer summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.project-explainer li {
+  margin-bottom: var(--spacing-xs);
+}
+
+.savings-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.savings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.savings-table caption {
+  text-align: left;
+  font-weight: 600;
+  padding-bottom: var(--spacing-sm);
+}
+
+.savings-table th,
+.savings-table td {
+  padding: var(--spacing-sm);
+  border-bottom: 1px solid var(--border-color);
+  text-align: left;
+  vertical-align: top;
+  min-width: 140px;
+}
+
+.savings-table thead,
+.savings-table tfoot {
+  background: var(--highlight);
+}
+
+.project-explainer summary:focus-visible,
+.savings-scroll:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
