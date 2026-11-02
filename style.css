@@ -655,12 +655,61 @@ html {
 .project-explainer {
   padding: var(--spacing-sm);
   background: var(--highlight);
+  border: 2px solid var(--secondary-accent);
   border-radius: var(--border-radius-small);
 }
 
 .project-explainer summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-xs);
   cursor: pointer;
+  list-style: none;
+  border-radius: var(--border-radius-small);
+}
+
+.project-explainer summary::-webkit-details-marker {
+  display: none;
+}
+
+.project-explainer summary:hover {
+  background: var(--link-bg);
+}
+
+.project-details-label {
+  flex: 1 1 260px;
+}
+
+.project-details-label > span {
+  margin-top: 4px;
+  font-size: 0.9rem;
+}
+
+.project-details-action {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background: var(--text-color);
+  color: var(--section-bg);
+  border-radius: var(--border-radius-small);
   font-weight: 600;
+}
+
+.project-details-closed {
+  display: block;
+}
+
+.project-details-open {
+  display: none;
+}
+
+.project-explainer[open] .project-details-closed {
+  display: none;
+}
+
+.project-explainer[open] .project-details-open {
+  display: block;
 }
 
 .project-explainer li {
